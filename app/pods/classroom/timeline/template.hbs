@@ -36,7 +36,7 @@
     </div>
 
     <div class="progress row no-gutters justify-content-start justify-content-md-around align-items-center">
-      <div class="progress-circle col-3 col-md-3 ml-4 ml-md-0">
+      <div class="progress-circle col-3 col-md-3">
         <div class="status-circle">
           <div class="circle-back"></div>
           <div class="circle-front d-flex flex-column justify-content-center">
@@ -54,9 +54,9 @@
           Progress</p>
       </div>
       {{#if run.topRunAttempt.premium}}
-        <div class="offset-md-5 col-4 col-md-5">
+        <div class="offset-md-5 col-3 col-md-5">
           <div class="button-solid">
-            {{#link-to 'attempt' run.topRunAttempt.id tagName="button" activeClass=""}} Resume Learning {{/link-to}}
+            {{#link-to 'attempt' run.topRunAttempt.id tagName="button" activeClass=""}} Resume {{/link-to}}
           </div>
         </div>
       {{else}}
